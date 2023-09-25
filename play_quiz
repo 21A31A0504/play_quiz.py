@@ -1,0 +1,41 @@
+print("Hey guys,Welcome to my computer quiz!")
+
+play = input("Do you want to play? ")
+
+if play.lower() != "yes":
+    quit()
+
+print("Okay! Let's play :)")
+score = 0
+
+answer = input("What does OS stand for? ")
+if answer.lower() == "operating system":
+    print('Correct!')
+    score += 1
+else:
+    print("Incorrect!")
+
+answer = input("What does GUI stand for? ")
+if answer.lower() == "graphical user interface":
+    print('Correct!')
+    score += 1
+else:
+    print("Incorrect!")
+
+answer = input("What does SQL stand for? ")
+if answer.lower() == "structured query language":
+    print('Correct!')
+    score += 1
+else:
+    print("Incorrect!")
+
+answer = input("What does JPEG stand for? ")
+if answer.lower() == "joint photographic experts group":
+    print('Correct!')
+    score += 1
+else:
+    print("Incorrect!")
+print("You answered " + str(score) + " questions correct!")
+print("You scored " + str((score / 4) * 100) + "%.")
+print("Hope you guys enjoyed playing my quiz")
+print("Thank You")
